@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ziang (Jay) Zhang</title>
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div id="topbar">
+    <span class="logo">Ziang Zhang</span>
+    <button id="theme-toggle">☾ Dark</button>
+  </div>
+
+  <main>
+
+    <!-- Hero -->
+    <section id="hero-section">
+      <div id="hero">
+        <img id="avatar" src="assets/selfi.jpg" alt="Ziang Zhang" />
+        <div class="hero-text">
+          <h1>Ziang (Jay) Zhang</h1>
+          <p class="tagline">Engineer · Data Analyst · Developer · Early Adopter</p>
+          <p class="hero-bio">
+            I build production-grade AI systems and industrial digitalization platforms — from
+            edge computing on factory floors to RAG-powered enterprise AI. My work bridges
+            software engineering, machine learning, and real-world deployment across
+            manufacturing, finance, and SaaS.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:ziang.zhang@rotmanalum.utoronto.ca">✉ ziang.zhang@rotmanalum.utoronto.ca</a>
+            <a href="https://www.linkedin.com/in/ziangzhang-jay" target="_blank" rel="noopener">↗ LinkedIn</a>
+          </div>
+          <a class="resume-btn" href="assets/resume.pdf" target="_blank">↓ Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ask Me — featured at the top -->
+    <section id="askme-section">
+      <div class="askme-header">Ask Me Anything</div>
+      <p class="askme-sub">
+        Powered by a RAG system I designed, developed, and deployed myself using my personal knowledge base —
+        ask me anything about my experience, projects, background, or hobbies.
+      </p>
+
+      <div class="chips">
+        <div class="chip-row">
+          <span class="chip" data-question="Tell me about some of your projects at Siemens.">Tell me about some of your projects at Siemens.</span>
+          <span class="chip" data-question="What GenAI products did you build at Manulife?">What GenAI products did you build at Manulife?</span>
+        </div>
+        <div class="chip-row">
+          <span class="chip" data-question="Tell me about IDP Plus.">Tell me about IDP Plus.</span>
+          <span class="chip" data-question="What are your hobbies?">What are your hobbies?</span>
+          <span class="chip" data-question="What are your career goals in AI?">What are your AI goals?</span>
+        </div>
+        <div class="chip-row">
+          <span class="chip" style="flex: 0.7" data-question="Why did you move into AI?">Why did you move into AI?</span>
+          <span class="chip" style="flex: 1.3" data-question="What qualities do you have that make you stand out from others?">What qualities make you stand out from others?</span>
+        </div>
+      </div>
+
+      <div class="input-row">
+        <input
+          id="question-input"
+          type="text"
+          placeholder="Ask anything about Jay…"
+          autocomplete="off"
+        />
+        <button id="send-btn">Ask →</button>
+      </div>
+
+      <div id="answer-box">
+        <div class="answer-label">Answer</div>
+        <div id="answer-text"></div>
+        <div id="sources" class="sources"></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="section-label">About</div>
+      <p>
+        I'm a multidisciplinary engineer with a foundation in electrical engineering, software
+        development, industrial automation, and applied AI. I moved to Canada in 2016 to study
+        at the University of Toronto, and after graduating joined Siemens as a full-stack edge
+        computing developer — connecting factory-floor equipment to digital systems so
+        manufacturers could collect, analyze, and act on operational data.
+      </p>
+      <p style="margin-top: 1rem;">
+        Those years taught me that technology alone doesn't create value: data quality, domain
+        expertise, and the ability to turn information into actionable insight are what separate
+        success from failure. That insight led me to pursue a Master of Management Analytics at
+        Rotman, and from there into GenAI — building RAG systems, agentic pipelines, and
+        enterprise AI products. Today I'm excited by the intersection of AI, analytics, and
+        software engineering: using technology not just to build systems, but to solve meaningful
+        business problems and deliver measurable impact.
+      </p>
+      <p style="margin-top: 1rem;">
+        I'm naturally curious, enjoy building things end-to-end, and believe that the hardest
+        part of engineering is rarely writing the code — it's communication, collaboration, and
+        bridging the gap between technology and real-world context.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="section-label">Skills</div>
+      <div class="skills-grid">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">GenAI</span>
+        <span class="skill-tag">LLMs</span>
+        <span class="skill-tag">RAG</span>
+        <span class="skill-tag">Agentic AI</span>
+        <span class="skill-tag">Prompt Engineering</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">REST APIs</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">Redis</span>
+        <span class="skill-tag">RabbitMQ</span>
+        <span class="skill-tag">PLC Integration</span>
+        <span class="skill-tag">IT/OT Integration</span>
+        <span class="skill-tag">Edge Computing</span>
+        <span class="skill-tag">Data Analytics</span>
+        <span class="skill-tag">Predictive Modeling</span>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <div class="section-label">Experience</div>
+      <div class="timeline">
+
+        <div class="tl-item">
+          <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-body">
+            <div class="tl-header">
+              <span class="tl-title">GenAI Consultant (Practicum)</span>
+              <span class="tl-period">2024</span>
+            </div>
+            <div class="tl-org">Manulife · Toronto, Canada</div>
+            <ul class="tl-bullets">
+              <li>Built a proof-of-concept RAG HR assistant enabling employees to query internal HR policies using natural language, combining vector retrieval with LLM generation.</li>
+              <li>Designed and deployed an AI-powered policy authoring platform that automated policy generation while enforcing corporate writing and formatting standards.</li>
+              <li>Presented GenAI solutions and ROI analysis to business and HR stakeholders, translating technical capabilities into practical enterprise use cases.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-body">
+            <div class="tl-header">
+              <span class="tl-title">Technical Consultant – Factory Automation &amp; Digitalization</span>
+              <span class="tl-period">2021 – 2023</span>
+            </div>
+            <div class="tl-org">Siemens · Beijing, China</div>
+            <ul class="tl-bullets">
+              <li>Delivered industrial digitalization and IT/OT integration solutions for 30+ manufacturing and agricultural facilities across China, enabling customers to transition from manual to digital workflows.</li>
+              <li>Built a high-frequency industrial edge data acquisition platform for Great Wall Motors using HTTP, Redis, and RabbitMQ — enabling real-time ingestion and processing of equipment data for enterprise system integration.</li>
+              <li>Developed energy management applications for Swire Coca-Cola, integrating PLC and utility meter data to calculate production-line energy KPIs and identify abnormal consumption patterns.</li>
+              <li>Designed middleware connecting shop-floor equipment and MES systems, implementing heartbeat detection, automated data validation, and production data synchronization.</li>
+              <li>Registered two computer software copyrights for connector software linking Siemens Industrial Edge to major Chinese cloud platforms (Alibaba Cloud, Tencent Cloud, domestic IoT platforms).</li>
+              <li>Selected as one of the hosts for Siemens China's 150th Anniversary Gala Night, representing the company's new generation of engineers alongside the CEO of Siemens Greater China.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-body">
+            <div class="tl-header">
+              <span class="tl-title">Founder &amp; Full-Stack Developer</span>
+              <span class="tl-period">Independent</span>
+            </div>
+            <div class="tl-org"><a href="https://www.idp-plus.com" target="_blank" rel="noopener">IDP Plus · idp-plus.com</a></div>
+            <ul class="tl-bullets">
+              <li>Founded and built a SaaS platform for international driver's license translation and generation, processing 500+ customer orders through a fully automated workflow.</li>
+              <li>Independently developed the entire technology stack: frontend, backend APIs, OCR-based document validation, automated PDF generation, and payment processing.</li>
+              <li>Reduced manual document preparation time by 95% through end-to-end automation; managed deployment, operations, and external partner relationships for printing and distribution.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <div class="section-label">Education</div>
+      <div class="edu-grid">
+
+        <div class="edu-card">
+          <div>
+            <div class="edu-degree">Master of Management Analytics</div>
+            <div class="edu-school">University of Toronto, Rotman School of Management</div>
+          </div>
+          <div class="edu-year">2024</div>
+        </div>
+
+        <div class="edu-card">
+          <div>
+            <div class="edu-degree">BASc, Electrical &amp; Computer Engineering</div>
+            <div class="edu-school">University of Toronto</div>
+            <div class="edu-note">Minor in Engineering Business · Certificate in Artificial Intelligence</div>
+          </div>
+          <div class="edu-year">2021</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Interests -->
+    <section id="interests">
+      <div class="section-label">Beyond the Resume</div>
+      <div class="interests-grid">
+        <div class="interest-card">
+          <div class="interest-icon">⛷</div>
+          <div class="interest-label">Snowboarding</div>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon">⛳</div>
+          <div class="interest-label">Golf</div>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon">✈</div>
+          <div class="interest-label">Travel</div>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon">🏕</div>
+          <div class="interest-label">Camping</div>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon">📚</div>
+          <div class="interest-label">Reading</div>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon">🎮</div>
+          <div class="interest-label">Gaming</div>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon">🤖</div>
+          <div class="interest-label">Tech Geek</div>
+        </div>
+      </div>
+      <p class="interests-note">
+        Fluent in English and Mandarin Chinese. Grew up in Harbin, studied and worked in Toronto.
+        I genuinely enjoy exploring new AI tools and building side projects — this site's RAG backend is one of them.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Ziang (Jay) Zhang · Built with GitHub Pages</p>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/askme.js"></script>
+</body>
+</html>

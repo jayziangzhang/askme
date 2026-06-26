@@ -1,0 +1,72 @@
+{
+  "name": "Ziang (Jay) Zhang",
+  "tagline": "AI & Digital Transformation Engineer",
+  "about": "I build production-grade AI and industrial digitalization systems — from IT/OT integration platforms on factory floors to RAG-powered enterprise AI applications. My work sits at the intersection of software engineering, machine learning, and real-world deployment.",
+  "email": "ziang.zhang@rotmanalum.utoronto.ca",
+  "linkedin": "https://www.linkedin.com/in/ziangzhang-jay",
+  "github": "",
+  "resume": "assets/resume.pdf",
+  "avatar": "assets/selfi.jpg",
+  "skills": [
+    "Python", "SQL", "JavaScript", "TypeScript",
+    "GenAI", "LLMs", "RAG", "Agentic AI",
+    "Node.js", "REST APIs", "Docker", "Redis",
+    "PLC Integration", "IT/OT", "Edge Computing"
+  ],
+  "education": [
+    {
+      "school": "University of Toronto",
+      "degree": "Master of Management Analytics",
+      "year": "2024"
+    },
+    {
+      "school": "University of Toronto",
+      "degree": "BASc, Electrical Engineering",
+      "year": "2021",
+      "note": "Minor in Engineering Business · Certificate in AI"
+    }
+  ],
+  "experience": [
+    {
+      "title": "GenAI Consultant (Practicum)",
+      "org": "Manulife",
+      "location": "Toronto, Canada",
+      "period": "2024",
+      "bullets": [
+        "Built a RAG HR assistant enabling employees to query internal policies via natural language.",
+        "Designed an AI-powered policy authoring platform automating policy generation with corporate standards.",
+        "Presented GenAI solutions to business stakeholders."
+      ]
+    },
+    {
+      "title": "Technical Consultant – Factory Automation & Digitalization",
+      "org": "Siemens",
+      "location": "Beijing, China",
+      "period": "2021 – 2023",
+      "bullets": [
+        "Delivered IT/OT integration solutions for 30+ manufacturing and agricultural facilities.",
+        "Built a high-frequency edge data acquisition platform for Great Wall Motors using HTTP, Redis, and RabbitMQ.",
+        "Built energy management apps for Swire Coca-Cola integrating PLC and utility meter data."
+      ]
+    },
+    {
+      "title": "Founder & Full-Stack Developer",
+      "org": "IDP Plus",
+      "location": "idp-plus.com",
+      "period": "Independent",
+      "bullets": [
+        "Built a SaaS platform for international driver's license translation, processing 500+ orders.",
+        "Developed full stack: frontend, backend APIs, OCR validation, PDF generation, and payments.",
+        "Reduced manual document preparation time by 95% through full workflow automation."
+      ]
+    }
+  ],
+  "presetQuestions": [
+    "What did you do at Manulife?",
+    "Tell me about your Siemens experience.",
+    "What is IDP Plus?",
+    "What are your core technical skills?",
+    "What is your educational background?"
+  ],
+  "apiUrl": "http://127.0.0.1:8000/query"
+}
