@@ -500,9 +500,28 @@ footer {
 
 /* ── Responsive ── */
 @media (max-width: 600px) {
+  main { padding: 70px 1rem 3rem; }
+
+  /* Hero */
   #hero { flex-direction: column; gap: 1.25rem; }
   #avatar { width: 120px; height: 144px; }
   .hero-text h1 { font-size: 22px; }
+  .hero-text .tagline { font-size: 13px; white-space: normal; }
+  .hero-bio { font-size: 14px; }
+
+  /* Ask Me */
+  .chip-row { flex-direction: column; }
+  .chip { flex: none; white-space: normal; text-align: left; font-size: 13px; }
+  #askme-section { padding: 1.25rem; }
+
+  /* Beyond the Resume */
+  .interests-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .interest-icon { font-size: 20px; }
+  .interest-label { font-size: 11px; }
+
+  /* Timeline */
   .tl-header { flex-direction: column; gap: 2px; }
   .edu-card { flex-direction: column; gap: 4px; }
 }
