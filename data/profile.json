@@ -68,5 +68,5 @@
     "What are your core technical skills?",
     "What is your educational background?"
   ],
-  "apiUrl": "http://127.0.0.1:8000/query"
+  "apiUrl": "https://personal-rag-production-9c4b.up.railway.app/query"
 }
