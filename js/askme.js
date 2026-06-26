@@ -5,7 +5,7 @@
   const answerText = document.getElementById('answer-text');
   const sourcesEl = document.getElementById('sources');
 
-  let apiUrl = 'http://127.0.0.1:8000/query';
+  let apiUrl = 'https://personal-rag-production-9c4b.up.railway.app';
 
   // Load API URL from profile.json
   fetch('data/profile.json')
