@@ -13,6 +13,25 @@
     .then(function (p) { if (p.apiUrl) apiUrl = p.apiUrl; })
     .catch(function () {});
 
+  function linkify(text) {
+    // Escape HTML first to prevent XSS
+    var escaped = text
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;');
+    // Convert URLs (http/https) to clickable links
+    escaped = escaped.replace(
+      /(https?:\/\/[^\s——]+)/g,
+      '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>'
+    );
+    // Convert email addresses to mailto links
+    escaped = escaped.replace(
+      /([a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,})/g,
+      '<a href="mailto:$1">$1</a>'
+    );
+    return escaped;
+  }
+
   function ask(question) {
     if (!question.trim()) return;
 
@@ -33,7 +52,7 @@
         return r.json();
       })
       .then(function (data) {
-        answerText.textContent = data.answer || 'No answer returned.';
+        answerText.innerHTML = linkify(data.answer || 'No answer returned.');
 
         if (data.sources && data.sources.length > 0) {
           data.sources.forEach(function (s) {
