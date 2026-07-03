@@ -19,6 +19,8 @@
       .replace(/&/g, '&amp;')
       .replace(/</g, '&lt;')
       .replace(/>/g, '&gt;');
+    // Convert **bold** to <strong>
+    escaped = escaped.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
     // Convert URLs (http/https) to clickable links
     escaped = escaped.replace(
       /(https?:\/\/[^\s——]+)/g,
